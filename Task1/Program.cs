@@ -17,6 +17,9 @@ namespace Task1
                     PushAndGet(stack);
                 });
             }
+            Thread.Sleep(1500);
+            Console.WriteLine(stack.Count());
+
             Console.ReadLine();
         }
         private static void PushAndGet(LIFO stack)
@@ -24,7 +27,7 @@ namespace Task1
             for (int i = 0; i < stack.Length; i++)
             {
                 stack.Push(i);
-                stack.Get();
+                //stack.Get();
                 Console.WriteLine("fdscdsvdsvsdvs");
             }
 
